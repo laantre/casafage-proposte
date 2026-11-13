@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa FAGE · Alloggio Turistico a Guardiagrele</title>
+<meta name="description" content="Casa FAGE, alloggio turistico moderno e luminoso a Guardiagrele, ai piedi della Majella. 5 posti letto, Wi-Fi, parcheggio privato. Prenota su WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--soft:#F4F2EE;--ink:#1F1D1A;--mute:#6E6A63;--line:#E4E0D8;--acc:#B5653E;--wa:#25D366;--wa-d:#1DA851;
+  --disp:'Italiana',Georgia,serif;--sans:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.7}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--disp);font-size:28px;letter-spacing:.14em;text-decoration:none}
+.links{display:flex;gap:30px;font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.links a{text-decoration:none;color:var(--mute)}
+.links a:hover{color:var(--ink)}
+@media (max-width:860px){.links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;text-decoration:none;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.04em;padding:14px 26px;border-radius:2px;transition:background .15s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa:hover{background:var(--wa-d)}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#000}
+.btn-sm{padding:10px 16px;font-size:12px}
+
+/* hero split */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;padding-top:68px}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:60px clamp(24px,6vw,90px)}
+.over{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(64px,9vw,128px);line-height:.92;letter-spacing:.02em;margin:22px 0 10px}
+.hero .sub2{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
+.hero .tag{font-family:var(--disp);font-size:clamp(28px,3.4vw,40px);margin:26px 0 14px;font-style:italic}
+.hero p.sub{max-width:440px;color:var(--mute);margin-bottom:34px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative;overflow:hidden;background:var(--soft)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-img figcaption{position:absolute;left:20px;bottom:20px;background:#fff;padding:10px 16px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+@media (max-width:860px){.hero{grid-template-columns:1fr;min-height:0}.hero-img{aspect-ratio:4/3;order:-1}.hero-txt{padding:44px 24px 56px}}
+
+section{padding:110px 0}
+.num{font-family:var(--disp);font-size:20px;color:var(--acc);display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.num:after{content:"";height:1px;width:60px;background:var(--acc)}
+h2{font-family:var(--disp);font-weight:400;font-size:clamp(40px,5.4vw,66px);line-height:1.05;margin-bottom:24px}
+.lead{font-size:18px;color:var(--mute);max-width:600px}
+
+/* casa */
+.casa{display:grid;grid-template-columns:5fr 6fr;gap:80px}
+.amen{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.amen div{display:flex;align-items:center;gap:16px;padding:22px 0;border-bottom:1px solid var(--line);font-weight:500;font-size:15px}
+.amen div:nth-child(odd){padding-right:20px}
+.amen svg{width:28px;height:28px;flex:none;color:var(--acc);stroke-width:1.5}
+@media (max-width:860px){.casa{grid-template-columns:1fr;gap:40px}}
+@media (max-width:420px){.amen{grid-template-columns:1fr}}
+
+/* gallery strip */
+.gallery{background:var(--soft)}
+.ghead{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.strip{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:16px;margin-top:40px}
+.strip button{border:0;padding:0;cursor:zoom-in;overflow:hidden;background:#ddd;aspect-ratio:3/4}
+.strip button:first-child{aspect-ratio:auto}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.strip button:hover img{transform:scale(1.05)}
+@media (max-width:700px){.strip{grid-template-columns:1fr 1fr}.strip button:first-child{grid-column:1/3;aspect-ratio:4/3}}
+.lb{position:fixed;inset:0;background:rgba(15,14,12,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}.lb img{max-height:90vh}
+
+/* fage */
+.fage{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.letters{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line)}
+.letters div{aspect-ratio:1;display:flex;flex-direction:column;justify-content:space-between;padding:22px;border:1px solid var(--line)}
+.letters b{font-family:var(--disp);font-weight:400;font-size:clamp(70px,9vw,120px);line-height:.9;color:var(--ink)}
+.letters i{font-style:normal;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);align-self:flex-end}
+.fage p{color:var(--mute);margin-bottom:16px;max-width:460px}
+.fage .tag{font-family:var(--disp);font-size:36px;font-style:italic;color:var(--ink)}
+@media (max-width:860px){.fage{grid-template-columns:1fr;gap:44px}}
+
+/* dintorni list */
+.dint{background:var(--ink);color:#fff}
+.dint .lead{color:#B9B4AA}
+.dlist{margin-top:56px;border-top:1px solid #3A3631}
+.ditem{display:grid;grid-template-columns:60px 1fr 1.2fr 220px;gap:28px;align-items:center;padding:26px 0;border-bottom:1px solid #3A3631}
+.ditem span{font-family:var(--disp);font-size:22px;color:var(--acc)}
+.ditem h3{font-family:var(--disp);font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.1}
+.ditem p{color:#B9B4AA;font-size:15px}
+.ditem img{width:220px;aspect-ratio:16/10;object-fit:cover}
+@media (max-width:860px){.ditem{grid-template-columns:40px 1fr;gap:6px 16px}.ditem p{grid-column:2}.ditem img{grid-column:1/3;grid-row:1;width:100%;margin-bottom:12px}}
+
+/* contatti */
+.req{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contact-list{display:grid;gap:22px;margin:34px 0}
+.contact-list div{display:grid;grid-template-columns:120px 1fr;gap:16px;font-size:15px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.contact-list small{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);padding-top:3px}
+.contact-list a{text-decoration:none}
+.map{aspect-ratio:16/10;background:var(--soft);filter:grayscale(.6)}
+.map iframe{width:100%;height:100%;border:0}
+form{background:var(--soft);padding:40px;display:grid;gap:20px;align-self:start}
+form h3{font-family:var(--disp);font-weight:400;font-size:32px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);display:grid;gap:8px;min-width:0}
+input,select{font:inherit;font-size:16px;color:var(--ink);background:transparent;border:0;border-bottom:1.5px solid #C9C3B8;border-radius:0;padding:10px 0;width:100%;min-width:0;-webkit-appearance:none;appearance:none;min-height:44px}
+input:focus,select:focus{outline:none;border-bottom-color:var(--acc)}
+form .btn{justify-content:center;width:100%;padding:17px;font-size:15px;margin-top:6px}
+.hint{font-size:13px;color:var(--mute);text-align:center}
+.req>*{min-width:0}
+@media (max-width:860px){.req{grid-template-columns:1fr;gap:50px}form{padding:28px 22px}}
+@media (max-width:380px){.row{grid-template-columns:1fr}.contact-list div{grid-template-columns:1fr;gap:4px}}
+
+footer{border-top:1px solid var(--line);padding:50px 24px 100px;text-align:center;color:var(--mute);font-size:14px}
+footer .brand{display:block;color:var(--ink);margin-bottom:8px}
+footer .s{font-family:var(--disp);font-size:24px;font-style:italic;color:var(--ink);margin-bottom:8px}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:14px 20px 14px 16px;border-radius:999px;box-shadow:0 12px 30px -8px rgba(0,0,0,.35)}
+.fab svg{width:26px;height:26px}
+@media (max-width:520px){.fab span{display:none}.fab{padding:16px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.22 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+</svg>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top">CASA FAGE</a>
+  <div class="links"><a href="#casa">La casa</a><a href="#galleria">Galleria</a><a href="#fage">Perché FAGE</a><a href="#dintorni">Dintorni</a><a href="#contatti">Contatti</a></div>
+  <a class="btn btn-wa btn-sm" data-wa href="#"><svg><use href="#wa"/></svg>Prenota</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="hero-txt">
+    <div class="over">Tra mare e montagna, nel cuore dell'Abruzzo</div>
+    <h1>Casa<br>FAGE</h1>
+    <div class="sub2">Alloggio Turistico · Guardiagrele</div>
+    <div class="tag">Sei di Casa</div>
+    <p class="sub">Un alloggio moderno e luminoso a Guardiagrele, ai piedi della Majella. Pensato per farti sentire a casa.</p>
+    <div class="ctas">
+      <a class="btn btn-wa" data-wa href="#"><svg><use href="#wa"/></svg>Scrivici su WhatsApp</a>
+      <a class="btn btn-dark" href="#casa">Scopri la casa</a>
+    </div>
+  </div>
+  <figure class="hero-img"><img src="img/interior.jpg" alt="Soggiorno con cucina attrezzata e letto a castello"><figcaption>Guardiagrele (CH)</figcaption></figure>
+</header>
+
+<section id="casa"><div class="wrap casa">
+  <div>
+    <div class="num">01 · Benvenuti</div>
+    <h2>La casa</h2>
+    <p class="lead">Casa FAGE è un alloggio turistico moderno e luminoso, pensato per farti sentire a casa. Un luogo accogliente dove comfort, indipendenza e tradizione si incontrano. Ogni dettaglio è scelto per offrirti un soggiorno indimenticabile.</p>
+  </div>
+  <div class="amen">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 15h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3M13 10V7a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3"/></svg>5 posti letto</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="9" width="18" height="11" rx="1"/><path d="M3 13h18M8 9V5M12 9V4M16 9V5M7 16.5h1M16 16.5h1"/></svg>Cucina attrezzata</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6.5h2"/></svg>Lavatrice e asciugatrice</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/></svg>Aria condizionata</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg>TV</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg>Wi-Fi gratuito</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM5 11h14"/><circle cx="7.5" cy="13.5" r=".8" fill="currentColor"/><circle cx="16.5" cy="13.5" r=".8" fill="currentColor"/></svg>Parcheggio privato</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="5.5" cy="16.5" r="3.5"/><circle cx="18.5" cy="16.5" r="3.5"/><path d="M5.5 16.5 9 9h6l3.5 7.5M9 9 12 16.5h-1M14 6h2l-1 3M12.5 16.5 15 9"/></svg>Deposito e-bike interno</div>
+  </div>
+</div></section>
+
+<section class="gallery" id="galleria"><div class="wrap">
+  <div class="ghead"><div><div class="num">02 · Dai un'occhiata</div><h2 style="margin:0">Galleria</h2></div></div>
+  <div class="strip">
+    <button aria-label="Ingrandisci foto soggiorno"><img src="img/interior.jpg" alt="Soggiorno e cucina"></button>
+    <button aria-label="Ingrandisci foto bagno"><img src="img/bath.jpg" alt="Bagno con doccia e lavatrice"></button>
+    <button aria-label="Ingrandisci foto divano letto"><img src="img/sofa.jpg" alt="Divano letto"></button>
+  </div>
+</div></section>
+<div class="lb" id="lb"><img alt=""></div>
+
+<section id="fage"><div class="wrap fage">
+  <div class="letters">
+    <div><b>F</b><i>Francesca</i></div><div><b>A</b><i>Angelica</i></div>
+    <div><b>G</b><i>Giulia</i></div><div><b>E</b><i>Elia</i></div>
+  </div>
+  <div>
+    <div class="num">03 · Perché si chiama</div>
+    <h2>FAGE</h2>
+    <p>FAGE è l'acronimo dei nomi dei nostri quattro figli, il cuore della nostra famiglia.</p>
+    <p>Siamo in sei, e il nostro desiderio è farti sentire come parte della nostra casa.</p>
+    <div class="tag">Sei di casa ♥</div>
+  </div>
+</div></section>
+
+<section class="dint" id="dintorni"><div class="wrap">
+  <div class="num">04 · Vivi Guardiagrele</div>
+  <h2>Dintorni</h2>
+  <p class="lead">Respira la Majella, scopri i sapori autentici d'Abruzzo e porta con te ricordi che sanno di casa.</p>
+  <div class="dlist">
+    <div class="ditem"><span>i.</span><h3>Porta San Giovanni</h3><p>L'ingresso storico al borgo.</p><img src="img/porta.jpg" alt="Porta San Giovanni"></div>
+    <div class="ditem"><span>ii.</span><h3>Guardiagrele</h3><p>Storia, cultura e ospitalità nel cuore dell'Abruzzo.</p><img src="img/guardiagrele.jpg" alt="Guardiagrele al tramonto"></div>
+    <div class="ditem"><span>iii.</span><h3>La Majella</h3><p>Il nostro gigante buono, tra natura incontaminata e panorami mozzafiato.</p><img src="img/majella.jpg" alt="La Majella innevata"></div>
+    <div class="ditem"><span>iv.</span><h3>Torre Longobarda</h3><p>Detta Orsini: antica sentinella del borgo, simbolo di storia, difesa e leggenda.</p><img src="img/torre.jpg" alt="Torre Longobarda"></div>
+  </div>
+</div></section>
+
+<section id="contatti"><div class="wrap req">
+  <div>
+    <div class="num">05 · Ti aspettiamo</div>
+    <h2>Richiedi disponibilità</h2>
+    <p class="lead">Scegli le date e scrivici su WhatsApp: ti rispondiamo personalmente.</p>
+    <div class="contact-list">
+      <div><small>Indirizzo</small><span>Via Occidentale, 72<br>66016 Guardiagrele (CH)</span></div>
+      <div><small>Telefono</small><span><a href="tel:+393473307866">347 330 7866</a><br><a href="tel:+393486686767">348 668 6767</a></span></div>
+      <div><small>Social</small><span>Casa FAGE Alloggio Turistico<br>su Facebook e Instagram</span></div>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Mappa Casa FAGE" src="https://maps.google.com/maps?q=Via%20Occidentale%2072%2C%20Guardiagrele&z=15&output=embed"></iframe></div>
+  </div>
+  <form id="req">
+    <h3>Le tue date</h3>
+    <div class="row"><label>Arrivo<input type="date" name="in"></label><label>Partenza<input type="date" name="out"></label></div>
+    <label>Ospiti<select name="g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select></label>
+    <label>Nome<input type="text" name="n" placeholder="Il tuo nome"></label>
+    <button class="btn btn-wa" type="submit"><svg><use href="#wa"/></svg>Invia su WhatsApp</button>
+    <p class="hint">Si apre WhatsApp con il messaggio già pronto. Nessun pagamento online.</p>
+  </form>
+</div></section>
+
+<footer>
+  <span class="brand">CASA FAGE</span>
+  <div class="s">Vivi Guardiagrele, respira la Majella, sentiti a casa.</div>
+  <p>Alloggio Turistico · Via Occidentale 72, Guardiagrele (CH) · casafage.it</p>
+</footer>
+
+<a class="fab" data-wa href="#" aria-label="Scrivici su WhatsApp"><svg><use href="#wa"/></svg><span>Scrivici</span></a>
+<script>
+const PHONE = '393473307866';
+const wa = t => 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(t);
+document.querySelectorAll('[data-wa]').forEach(a => {
+  a.href = wa('Buongiorno! Vorrei informazioni sulla disponibilità di Casa FAGE.');
+  a.target = '_blank'; a.rel = 'noopener';
+});
+const fmt = v => v ? v.split('-').reverse().join('/') : '';
+document.getElementById('req').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  let m = 'Buongiorno! ';
+  if (f.get('n')) m += 'Sono ' + f.get('n') + '. ';
+  m += 'Vorrei sapere se Casa FAGE è disponibile';
+  if (f.get('in')) m += ' dal ' + fmt(f.get('in'));
+  if (f.get('out')) m += ' al ' + fmt(f.get('out'));
+  m += ' per ' + f.get('g') + (f.get('g') === '1' ? ' ospite' : ' ospiti') + '. Grazie!';
+  window.open(wa(m), '_blank', 'noopener');
+});
+const lb = document.getElementById('lb'), lbi = lb.querySelector('img');
+document.querySelectorAll('.gal button').forEach(b => b.addEventListener('click', () => {
+  lbi.src = b.querySelector('img').src; lbi.alt = b.querySelector('img').alt; lb.classList.add('on');
+}));
+lb.addEventListener('click', () => lb.classList.remove('on'));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
+</script>
+</body>
+</html>
